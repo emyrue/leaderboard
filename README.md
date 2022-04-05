@@ -34,7 +34,7 @@ To get a local copy up and running follow these simple steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/emyrue/leaderboard/issues).
 
 ## Show your support
 
