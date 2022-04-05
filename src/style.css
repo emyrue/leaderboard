@@ -6,4 +6,14 @@
 
 ul {
   list-style: none;
+  background: white;
+  border: 1px solid black;
+}
+
+.main-section {
+  display: flex;
+}
+
+ul li:nth-child(odd) {
+  background-color: lightgray;
 }
