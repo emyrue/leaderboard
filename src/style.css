@@ -4,16 +4,51 @@
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-ul {
-  list-style: none;
-  background: white;
-  border: 1px solid black;
+h1 {
+  font-size: 70px;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 0 0 5px 0;
 }
 
 .main-section {
   display: flex;
+  justify-content: space-around;
 }
 
-ul li:nth-child(odd) {
+.leaderboard-section {
+  width: 40%;
+}
+
+.leaderboard-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  border: 1px solid black;
+}
+
+ul#scores li:nth-child(odd) {
   background-color: lightgray;
+}
+
+li {
+  padding: 5px;
+  font-size: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit {
+  align-self: flex-end;
 }
