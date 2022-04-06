@@ -10,7 +10,12 @@ const addScore = async (object) => {
       'Content-type': 'application/json',
     },
   });
-  newScore.json().then(result => console.log(result.result));
 };
 
 export default addScore;
+
+export const getScores = async () => {
+  const allScores = await fetch(scoreURL);
+
+  return allScores.json();
+};
