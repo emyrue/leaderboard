@@ -12,10 +12,10 @@ const createGame = async (data) => {
     method: 'POST',
     body: data,
     headers: {
-      'Content-type': 'application/json'
+      'Content-type': 'application/json',
     },
   });
-  response.json().then(object => {
+  response.json().then((object) => {
     setID(object);
   });
 };
