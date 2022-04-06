@@ -19,3 +19,9 @@ export const getScores = async () => {
 
   return allScores.json();
 };
+
+export const createScore = (user, score, element) => {
+  const newElement = document.createElement('li');
+  newElement.textContent = `${user}: ${score}`;
+  element.appendChild(newElement);
+};
