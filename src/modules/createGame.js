@@ -17,6 +17,7 @@ const createGame = async (data) => {
   });
   response.json().then((object) => {
     setID(object);
+    console.log(getID());
   });
 };
 

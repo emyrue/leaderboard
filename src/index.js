@@ -1,8 +1,7 @@
 import './style.css';
 import createGame, { getID } from './modules/createGame.js';
 import addScore, { getScores, createScore } from './modules/addScore.js';
-import Scores from './modules/scores.js';
-import createList from './modules/createList';
+import createList from './modules/createList.js';
 
 const newGame = {
   name: 'throw the chalk at jimmy',
@@ -15,11 +14,11 @@ const userName = document.getElementById('user-name');
 const userScore = document.getElementById('user-score');
 const refresh = document.querySelector('.refresh');
 
-if (!getID()) {
+if (getID()) {
   await createGame(game);
 }
 
-getScores().then(result => createList(result.result, list));
+getScores().then((result) => createList(result.result, list));
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -30,6 +29,6 @@ form.addEventListener('submit', (e) => {
   createScore(userName.value, userScore.value, list);
 });
 
-refresh.addEventListener('click', (e) => {
-  getScores().then(result => createList(result.result, list));
+refresh.addEventListener('click', () => {
+  getScores().then((result) => createList(result.result, list));
 });
