@@ -12,6 +12,7 @@
 - JavaScript
 - Webpack
 - Linters
+- Leaderboard API
 
 ## Getting Started
 
