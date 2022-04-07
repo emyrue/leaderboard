@@ -3,8 +3,11 @@ export const setID = (object) => {
 };
 
 export const getID = () => {
-  const string = window.localStorage.getItem('id');
-  return string.slice(14, 35);
+  let string = '';
+  if (window.localStorage.getItem('id')) {
+    string = window.localStorage.getItem('id').slice(14, 35);
+  }
+  return string;
 };
 
 const createGame = async (data) => {
