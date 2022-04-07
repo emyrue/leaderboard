@@ -4,9 +4,16 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   font-size: 70px;
-  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: lightpink;
 }
 
 h2 {
@@ -21,11 +28,20 @@ button {
   border: none;
   border-radius: 5px;
   box-shadow: 5px 5px 5px lightpink;
+  transition-property: box-shadow, margin-right, margin-bottom;
+  transition-duration: 1s;
+}
+
+button:hover {
+  margin-right: -4px;
+  margin-bottom: -4px;
+  box-shadow: 1px 1px 5px lightpink;
 }
 
 .main-section {
   display: flex;
   justify-content: space-around;
+  margin: 20px;
 }
 
 .leaderboard-section {
@@ -47,7 +63,13 @@ ul {
 }
 
 ul::-webkit-scrollbar {
-  display: none;
+  background: lavender;
+  border-radius: 0 5px 5px 0;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: lightpink;
+  border-radius: 5px;
 }
 
 li {
