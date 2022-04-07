@@ -39,7 +39,14 @@ button {
 
 ul {
   list-style: none;
-  border: 1px solid black;
+  border: none;
+  border-radius: 5px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+ul::-webkit-scrollbar {
+  display: none;
 }
 
 li {
@@ -48,7 +55,11 @@ li {
 }
 
 ul#scores li:nth-child(odd) {
-  background-color: lightgray;
+  background-color: lavender;
+}
+
+ul#scores li:nth-child(even) {
+  background-color: lightpink;
 }
 
 .form-section {
@@ -66,10 +77,20 @@ input {
   margin: 5px;
   padding: 5px;
   font-size: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 input::placeholder {
   font-size: 15px;
+}
+
+#user-name {
+  background-color: lavender;
+}
+
+#user-score {
+  background-color: lightpink;
 }
 
 .submit {
