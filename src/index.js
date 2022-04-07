@@ -14,7 +14,7 @@ const userName = document.getElementById('user-name');
 const userScore = document.getElementById('user-score');
 const refresh = document.querySelector('.refresh');
 
-if (getID()) {
+if (!getID()) {
   await createGame(game);
 }
 
